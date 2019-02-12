@@ -6,9 +6,9 @@ def test_analyse_image_not_fancy(capsys):
     analyse_image(imgpath, do_print_fancy=False)
     expected_stdout = """(163, 143, 178)
 (9, 6, 5)
-(99, 35, 32)
+(97, 35, 31)
 (246, 222, 171)
-(151, 82, 64)
+(148, 81, 64)
 """
     captured = capsys.readouterr()
     assert captured.out == expected_stdout
